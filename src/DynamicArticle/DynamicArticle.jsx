@@ -9,7 +9,7 @@ const DynamicArticle = (props) => {
              <h1>{props.article.title}</h1>
              <address>
                        by {props.article.author} (
-                       <a href="mailto:{props.article.authorEmail}">{props.article.authorEmail}</a>)
+                       <a href="mailto:props.article.authorEmail">{props.article.authorEmail}</a>)
                        <br />
                      </address>
                      <time datetime="2018-11-22">{props.article.displayDate}</time>
