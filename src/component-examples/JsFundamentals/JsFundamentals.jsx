@@ -24,6 +24,8 @@ const JsFundamentals = (props) => {
     "variables",
     "datafetching",
   ];
+
+  //console.log("This is  a console message")
   return (
     <section>
       <header><h1>JsFundamentals component</h1></header>

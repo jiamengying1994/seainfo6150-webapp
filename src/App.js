@@ -5,11 +5,19 @@ import DynamicArticle from "./DynamicArticle/DynamicArticle";
 import { isEmpty } from "lodash";
 
 function App() {
-  const [fetchedData, setFetchedData] = useState({});
+  const [fetchedData, setFetchedData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      // put data fetching code here!
+      // performs a GET request
+      const response = await fetch(
+        "http://demo1390455.mockable.io/articles"
+      );
+
+      const responseJson = await response.json();
+      console.log(responseJson["181122102925-statue-of-liberty-crown"]);
+
+      setFetchedData(responseJson);
     };
 
     if (isEmpty(fetchedData)) {
@@ -26,6 +34,8 @@ function App() {
       </Switch>
     </div>
   );
+
+
 }
 
 export default App;
