@@ -29,7 +29,7 @@ function App() {
   return isEmpty(fetchedData) ? null : (
     <div className="App">
       <Switch>
-        <Route path="/article">
+        <Route path="/articleList">
           <ArticleList articleList={Object.values(fetchedData)} />
         </Route>
       </Switch>
