@@ -20,9 +20,6 @@ export class ArticleListItem extends React.Component {
     <>
       <div>
         <h2 className={styles.title}>{this.props.articleListItem.title}</h2>
-
-
-
         <p className={styles.date} key={this.props.articleListItem.title}>
          {this.state.isToggleOn?this.props.articleListItem.displayDate: ""}
         </p>

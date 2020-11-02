@@ -7,8 +7,11 @@ const ArticleList = (props) => {
   const articles = props.articleList;
 
   return (
+
     <div className={styles.outer}>
+     <div className = {styles.grid} >
       {articles.map((articleListItem) => (
+
       <div className={styles.box} key  = {articleListItem.slug}>
         <ArticleListItem
         articleListItem = {articleListItem}/>
@@ -16,6 +19,8 @@ const ArticleList = (props) => {
       ))
       }
     </div>
+    </div>
+
   );
 };
 
