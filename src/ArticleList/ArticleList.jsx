@@ -7,7 +7,6 @@ const ArticleList = (props) => {
   const articles = props.articleList;
 
   return (
-
     <div className={styles.outer}>
      <div className = {styles.grid} >
       {articles.map((articleListItem) => (

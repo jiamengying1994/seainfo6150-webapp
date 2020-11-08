@@ -21,7 +21,38 @@ background:grey;
 border-radius: 10px;
 }
 
-.grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+
+@supports not (display: grid) {
+	.grid-container div { columns: 3 5em; }
 }
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 700px) {
+    body {
+        font-size: 1rem;
+     }
+    .grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .grid div {
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    body {
+      font-size: 1.5rem;
+    }
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+
+

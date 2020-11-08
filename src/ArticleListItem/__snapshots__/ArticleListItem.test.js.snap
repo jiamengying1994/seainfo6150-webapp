@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleListItem tests renders correctly after button is clicked 1`] = `
+<div>
+  <div>
+    <h2
+      class="title"
+    >
+      hello
+    </h2>
+    <p
+      class="date"
+    />
+    <p />
+  </div>
+  <button
+    class="button"
+  >
+    Show less
+  </button>
+</div>
+`;
