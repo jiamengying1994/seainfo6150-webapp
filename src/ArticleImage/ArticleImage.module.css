@@ -1,0 +1,21 @@
+img
+{
+  height: 80%;
+  width: 60%;
+  position: relative;
+  right: auto;
+  border: 5px solid red;
+  border-radius: 100px/80px;
+  box-shadow: 5px 5px 5px gray;
+	background: red;
+}
+
+.article_image
+{
+
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+    float: left;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleImage test renders correctly 1`] = `
+<div>
+  <div
+    class="article_image"
+  >
+    <img />
+  </div>
+</div>
+`;

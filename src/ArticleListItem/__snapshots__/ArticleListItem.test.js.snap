@@ -3,6 +3,13 @@
 exports[`ArticleListItem tests renders correctly after button is clicked 1`] = `
 <div>
   <div>
+    <div
+      class="article_image"
+    >
+      <img
+        alt="hello"
+      />
+    </div>
     <h2
       class="title"
     >

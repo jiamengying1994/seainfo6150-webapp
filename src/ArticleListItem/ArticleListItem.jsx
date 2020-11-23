@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton";
+import ArticleImage from "../ArticleImage/ArticleImage";
 import styles from "./ArticleListItem.module.css";
 
 export class ArticleListItem extends React.Component {
@@ -16,9 +17,12 @@ export class ArticleListItem extends React.Component {
   }
 
   render() {
+
   return (
     <>
       <div>
+
+        <ArticleImage url ={this.props.articleListItem.image._url} title={this.props.articleListItem.title}/>
         <h2 className={styles.title}>{this.props.articleListItem.title}</h2>
         <p className={styles.date} key={this.props.articleListItem.title}>
          {this.state.isToggleOn?this.props.articleListItem.displayDate: ""}
